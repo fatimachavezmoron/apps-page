@@ -67,5 +67,10 @@ h2{
   --bs-navbar-padding-x: none;
 }
 
+.userCont {
+  display: flex;
+  flex-direction: column;
+}
+
 
 

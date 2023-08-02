@@ -1,7 +1,10 @@
-
+import './AboutScreen.css'
 
 export const AboutScreen = () => {
+
   return (
-    <div>AboutScreen</div>
+    <>
+    <h1>Movies</h1>
+   </>
   )
 }

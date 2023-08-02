@@ -1,6 +1,7 @@
 import { useForm } from "../hooks/useForm"
 import { useContext } from "react";
 import { UserContext } from "./context/UserContext";
+import { useState } from "react";
 
 export const LoginScreen = () => {
 
@@ -13,15 +14,22 @@ export const LoginScreen = () => {
 
   const {nombre, tecnologia, email, redes, formState, onInputChange} = useForm(initialForm);
 
-  const { setUsuario } = useContext( UserContext )
+  const { setUsuario } = useContext( UserContext );
+  const [showMessage, setShowMessage] = useState(false);
 
   const onSubmit = (e) => {
-    e.preventDefault()
-    setUsuario(formState)
+    e.preventDefault();
+    setUsuario(formState);
+    setShowMessage(true); 
   }
 
   return (
     <>
+          {showMessage && ( 
+        <div className="container mt-3">
+          <h4>Welcome {nombre}!</h4>
+        </div>
+      )}
       <form className="container" onSubmit={onSubmit}>
         <div className="form-group">
           <label htmlFor="nombre">Nombre</label>
@@ -67,7 +75,6 @@ export const LoginScreen = () => {
             onChange={onInputChange}
           />
         </div>
-     
         <button type="submit" className="btn btn-primary">Register</button>
       </form>
     </>

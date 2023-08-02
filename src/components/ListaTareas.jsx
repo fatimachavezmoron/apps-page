@@ -12,7 +12,7 @@ const initialState = [{
 }]
 
 
-const ADD_TAREA = '[TAREAS] agregar tarea'; // Define las acciones como strings
+const ADD_TAREA = '[TAREAS] agregar tarea'; 
 const FINALIZAR_TAREA = '[TAREAS] finalizar tarea';
 const ELIMINAR_TAREA = '[TAREAS] eliminar tarea';
 const BORRAR_TAREAS = '[TAREAS] borrar tareas';

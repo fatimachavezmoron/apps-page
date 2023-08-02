@@ -18,11 +18,11 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<HomeScreen />}></Route>
-            <Route path='/login' element={<LoginScreen />}></Route>
-            <Route path='/about' element={<AboutScreen />}></Route>
+            <Route path='/movies' element={<AboutScreen />}></Route>
             {/* <Route path='/contact' element={<ContactScreen />}></Route> */}
             <Route path='/weather' element={<WeatherApp />}></Route>
             <Route path='/*' element={<Navigate to='/'/>}></Route>
+            <Route path='/user' element={<LoginScreen />}></Route>
           </Routes>
         </BrowserRouter>
       </UserProvider>

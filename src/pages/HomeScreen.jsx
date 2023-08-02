@@ -27,8 +27,8 @@ const { usuario } = useContext( UserContext )
             <td>{usuario.redes}</td>
           </tr>
         </tbody>
-        <Link to='/login'>
-          <button style={{marginTop: '20px'}}>Add new user</button>
+        <Link to='/user'>
+          <button style={{marginTop: '20px'}}>Register</button>
         </Link>
       </table>
     </div>
