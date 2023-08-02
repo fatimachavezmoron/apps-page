@@ -20,6 +20,52 @@ h2{
   margin-top: 30px;
 }
 
+.form-control {
+  margin-bottom: 15px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 5px 10px;
+  box-shadow: 0px 4px 4px rgba(120, 119, 119, 0.2);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #34d0dc;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.collapse {
+  background-color: black;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #34d0dc;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #34d0dc;
+}
+
+.navbar {
+  --bs-navbar-padding-x: none;
+}
 
 
 

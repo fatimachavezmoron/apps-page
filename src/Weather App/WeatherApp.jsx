@@ -38,6 +38,7 @@ const fetchClima = async () => {
           type='text'
           value={city}
           onChange={handleCity}
+          placeholder='Name of city'
         />
         <button type='submit'>Search</button>
       </form>

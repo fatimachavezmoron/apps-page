@@ -1,6 +1,7 @@
 
 import { useContext } from 'react';
 import { UserContext } from './context/UserContext';
+import { Link } from 'react-router-dom';
 
 export const HomeScreen = () => {
 
@@ -8,7 +9,8 @@ const { usuario } = useContext( UserContext )
 
   return (
    <>
-      <table className="table table-striped table">
+    <div style={{marginLeft: '20px', marginRight: '20px'}}>
+      <table  className="table table-striped table">
         <thead>
           <tr>
             <th scope="col">Nombre</th>
@@ -25,7 +27,11 @@ const { usuario } = useContext( UserContext )
             <td>{usuario.redes}</td>
           </tr>
         </tbody>
+        <Link to='/login'>
+          <button style={{marginTop: '20px'}}>Add new user</button>
+        </Link>
       </table>
+    </div>
    </>
   )
 }
