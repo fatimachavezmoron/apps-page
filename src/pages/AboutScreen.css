@@ -1,35 +1,45 @@
-/* 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-form {
+.formMovies {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-input[type="text"] {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.movieList {
+  margin: 30px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
+
+.movieCard {
+  background-color: #888888;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow:  4px 4px 6px rgba(250, 248, 248, 0.5);
+  margin-top: 30px;
+}
+
+.movieCard img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow:  4px 4px 6px rgba(25, 25, 25, 0.5);
+}
+
+.movieCard h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: BLACK;
+  margin-bottom: 20px;
+}
+
+.movieCard p {
+  margin-bottom: 5px;
+  color: BLACK;
+} 
 
 button {
   padding: 10px 20px;
@@ -44,36 +54,10 @@ button:hover {
   background-color: #0056b3;
 }
 
-.movie-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.movie-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.movie-card img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.movie-card h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.movie-card p {
-  margin-bottom: 5px;
-} */
 
 
-@media (max-width: 600px) {
+
+/* @media (max-width: 600px) {
   h1 {
     font-size: 20px;
   }
@@ -97,4 +81,4 @@ button:hover {
   .movie-card h2 {
     font-size: 16px;
   }
-}
+} */
