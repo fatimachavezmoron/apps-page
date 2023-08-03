@@ -70,7 +70,7 @@ button:hover {
 
 .movie-card p {
   margin-bottom: 5px;
-}
+} */
 
 
 @media (max-width: 600px) {
@@ -97,4 +97,4 @@ button:hover {
   .movie-card h2 {
     font-size: 16px;
   }
-} */
+}
