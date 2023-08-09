@@ -15,11 +15,23 @@ const SongForm = ({handleSearch}) => {
       ...form,
       [e.target.name]: e.target.value,
     })
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    if( !form.artist || !form.song) {
+      alert('Incomplete data');
+      return;
+    }
+
+    handleSearch(form);
+    setForm(initialForm);
   }
 
   return (
     <div className='SongFormCont'>
-      <form >
+      <form onSubmit={handleSubmit}>
         <input
           type='text'
           name='artist'
