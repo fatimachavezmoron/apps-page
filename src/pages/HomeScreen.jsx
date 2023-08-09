@@ -1,7 +1,7 @@
 
 import { useContext } from 'react';
 import { UserContext } from './context/UserContext';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const HomeScreen = () => {
 
@@ -27,9 +27,9 @@ const { usuario } = useContext( UserContext )
             <td>{usuario.redes}</td>
           </tr>
         </tbody>
-        <Link to='/user'>
+        <NavLink to='/user'>
           <button style={{marginTop: '20px'}}>Register</button>
-        </Link>
+        </NavLink>
       </table>
     </div>
    </>
