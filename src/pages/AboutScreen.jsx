@@ -37,11 +37,7 @@ export const AboutScreen = () => {
 
   return (
     <>
-    <div style={{display:'flex', 
-                flexDirection:'column', 
-                ustifyContent:'center', 
-                alignItems:'center',
-                marginTop: '20px'}}>
+    <div className='movieCont'>
       <h1 className='titlemovies'>Search the Movie</h1>
       <form onSubmit={handleSubmit} className='formMovies'>
         <div>

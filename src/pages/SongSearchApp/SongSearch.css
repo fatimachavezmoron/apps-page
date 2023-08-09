@@ -1,0 +1,28 @@
+.SongFormCont {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.inputBtn {
+  background-color: #56b0f4;
+  color: white;
+  border: none;
+  padding: 10px 72px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.songCont {
+  height: 100vh;
+  background-image: url('../../assets/songSearch.png');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+.songCont h1{
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+}

@@ -10,9 +10,6 @@ export const CartApp = () => {
     <div className="contCartApp">
   <div className="container-fluid">
     <nav className="navbar navbar-expand-lg ">
-        <h1 style={{paddingTop:'20px', paddingRight:'30px'}}>
-        CartApp
-        </h1>
       <NavLink to='/eshop' style={{paddingRight:'18px'}} className="nav-link active" href="#">Cart</NavLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

@@ -2,6 +2,7 @@ import { useForm } from "../hooks/useForm"
 import { useContext } from "react";
 import { UserContext } from "./context/UserContext";
 import { useState } from "react";
+import { HomeScreen } from "./DataLogin";
 
 export const LoginScreen = () => {
 
@@ -77,6 +78,7 @@ export const LoginScreen = () => {
         </div>
         <button type="submit" className="btn btn-primary">Register</button>
       </form>
+      <HomeScreen/>
     </>
   )
 }

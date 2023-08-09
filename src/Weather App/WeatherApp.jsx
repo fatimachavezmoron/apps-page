@@ -30,9 +30,9 @@ const fetchClima = async () => {
 }
 
   return (
-    <div className='container'>
+    <div className='weatherCont'>
+    <div className='Wcontainer'>
       <h1>Weather App</h1>
-
       <form onSubmit={handleSubmit}>
         <input
           type='text'
@@ -50,6 +50,7 @@ const fetchClima = async () => {
           <img src={`https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2x.png`}/>
         </div>
       )}
+    </div>
     </div>
   )
 }

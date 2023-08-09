@@ -20,9 +20,6 @@ const handleImp = () => {
       <>
       <div className="container-fluid">
         <nav className="navbar navbar-expand-lg ">
-        <h1 style={{paddingTop:'20px', paddingRight:'30px'}}>
-        CartApp
-        </h1>
         <NavLink to='/eshop' className="navbar-brand nav-link" href="#">Cart</NavLink>
         <button className="navbar-toggler" 
           type="button" 
@@ -101,6 +98,7 @@ const handleImp = () => {
         <div>
           <button className="btn btn-primary w-25"
             onClick={handleImp}
+            disabled={buyList<1}
           >
             Buy
           </button>
