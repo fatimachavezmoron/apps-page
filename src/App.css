@@ -240,4 +240,8 @@ h2{
     backdrop-filter: blur(10px);
     color: white;
   }
+
+  .table-striped {
+    font-size: 10px;
+  }
 }
