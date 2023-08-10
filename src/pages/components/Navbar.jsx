@@ -16,7 +16,7 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div className="container">
       <button
-            className={`navbar-toggler shadow-none border-0 ${
+            className={`navbar-toggler btnOpen shadow-none border-0 ${
               isOpen ? "collapsed" : ""
             }`}
             type="button"

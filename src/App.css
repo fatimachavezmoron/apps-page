@@ -244,4 +244,12 @@ h2{
   .table-striped {
     font-size: 10px;
   }
+
+  .logo {
+    font-size: 50px;
+  }
+
+  .btnOpen {
+    margin-bottom: 20px;
+  }
 }
