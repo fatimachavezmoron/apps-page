@@ -13,7 +13,7 @@ export const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <NavLink to='/' className="nav-link" >Song Search</NavLink>
+            <NavLink to='/' className="nav-link" >My gallery</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to='/movies' className="nav-link" >Movies</NavLink>

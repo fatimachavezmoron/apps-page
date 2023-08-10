@@ -11,7 +11,8 @@ import { BuyPage } from './pages/CartApp/BuyPage';
 import { CartPage } from './pages/CartApp/CartPage';
 import { ProductsProvider } from './pages/context/ProductsProvider';
 import { CartProvider } from './pages/context/CartProvider';
-import SongSearch from './pages/SongSearch';
+import ImageSearch from './pages/ImageSearch/ImageSearch';
+
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path='/' element={<SongSearch />}></Route>
+            <Route path='/' element={<ImageSearch />}></Route>
             <Route path='/movies' element={<AboutScreen />}></Route>
             <Route path='/weather' element={<WeatherApp />}></Route>
             <Route path='/user' element={<LoginScreen />}></Route>
