@@ -63,7 +63,7 @@ const ImageSearch = () => {
         {selectedImage && (
           <img src={selectedImage} alt='Selected' style={{ width: '450px', height: 'auto' }}/>
         )}
-        <button className='btnImg'  onClick={closeModal} >X</button>
+        <button className='btnImg' onClick={closeModal} >X</button>
       </Modal>
     </div>
   )

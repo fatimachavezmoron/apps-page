@@ -3,6 +3,8 @@ import { CartContext } from '../context/CartContext';
 import { NavLink } from 'react-router-dom';
 import { Badge } from "@mui/material"
 import { ShoppingCart } from "@mui/icons-material"
+import DeleteIcon from '@mui/icons-material/Delete';
+
 
 export const CartPage = () => {
 
@@ -15,7 +17,7 @@ const calcularTotal = () => {
 const handleImp = () => {
   print()
 }
-
+const isMobile = window.innerWidth <= 991;  
   return (
       <>
       <div className="container-fluid">
@@ -57,39 +59,43 @@ const handleImp = () => {
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className='buyProductsCont'>
             {
               buyList.map(item => (
                 <>
                 <tr key={item.id}>
-                  <th scope="row">{item.title}</th>
+                  <th scope="row" className='buyProdTitle'>{item.title}</th>
                   <td>{item.price}</td>
                   <td>
-                    <button className='btn btn-outline-primary'
+                    <button className='btn btn-outline-primary btnadd'
                       onClick={() => removeQuantity(item.id)}
                     >-</button>
-                    <button className='btn btn-primary'>{item.quantity}</button>
-                    <button className='btn btn-outline-primary'
+                    <button className='btn btn-primary btnQt'>{item.quantity}</button>
+                    <button className='btn btn-outline-primary btnadd'
                        onClick={() => addQuantity(item.id)}
                     >+</button>
                   </td>
                   <td>
-                    <button
-                      type='button'
-                      className='btn btn-danger'
-                      onClick= {()=> deleteProduct(item.id)}
-                    > Delete
-                    </button>
+                  {isMobile ? (
+                  <DeleteIcon
+                    onClick={() => deleteProduct(item.id)}
+                    style={{ cursor: 'pointer', color: 'red' }}
+                  />
+                ) : (
+                  <button
+                    type='button'
+                    className='btn btn-danger'
+                    onClick={() => deleteProduct(item.id)}
+                  > Delete
+                  </button>
+                )}
                   </td>
                 </tr>
                 </>
               ))
             }
             <th>
-              <p style={{width:'320px', 
-                  borderRadius:'5px', 
-                  textAlign:'center', 
-                  marginTop:'10px'}}>TOTAL:
+              <p className='TotalBuy'>TOTAL:
               <span> ${calcularTotal()}</span>
               </p>
             </th>

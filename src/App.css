@@ -232,6 +232,13 @@ h2{
   font-size: 18px;
 }
 
+.TotalBuy {
+  width: 320px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
 
 
 @media(max-width: 991px){
@@ -251,5 +258,33 @@ h2{
 
   .btnOpen {
     margin-bottom: 20px;
+  }
+
+  .buyProductsCont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btnadd {
+    border: none;
+    padding:0;
+  }
+
+
+  .btnQt {
+    padding: 7px 13px;
+  }
+
+  .buyProdTitle {
+    width: 50px;
+  }
+
+  .TotalBuy {
+    width: 280px;
   }
 }
