@@ -11,7 +11,7 @@ export const CartApp = () => {
   <div className="container-fluid">
     <nav className="navbar navbar-expand-lg ">
       <NavLink to='/eshop' style={{paddingRight:'18px'}} className="nav-link active" href="#">Cart</NavLink>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler shadow-none border-0 hamburgerIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
