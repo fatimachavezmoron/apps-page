@@ -1,6 +1,7 @@
 .songCont {
   height: 100vh;
-  background-image: url('../../assets/songSearch.png');
+  background: url('../../assets/microfo.jpg') rgba(0,0,0,0.6);
+  background-blend-mode:darken;
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center;
