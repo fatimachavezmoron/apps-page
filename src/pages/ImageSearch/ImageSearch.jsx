@@ -17,7 +17,7 @@ const ImageSearch = () => {
 
   const searchRes = async () => {
     const API_KEY = `G7PyDBHsgI27DNov1huNkIjG1rt1QIyWx7DZNCam9tY`
-    const URL = `https://api.unsplash.com/search/photos/?client_id=${API_KEY}&query=${valor}&per_page=21`
+    const URL = `https://api.unsplash.com/search/photos/?client_id=${API_KEY}&query=${valor}&per_page=33`
 
     const response = await fetch(URL);
     const data = await response.json();
@@ -35,7 +35,7 @@ const ImageSearch = () => {
   return (
     <div className='songCont'>
       <div className='inputCont'>
-        <h1>My gallery</h1>
+        <h1>My Gallery</h1>
         <input
           placeholder='Search images'  
           onChange={e => setValor(e.target.value)}
